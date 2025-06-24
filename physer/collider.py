@@ -18,9 +18,6 @@ class Collider():
         self.object: any = self
         self.__dict__.update(kwargs)
 
-    def set_collision_class(self, class_name: str):
-        self.collision_class = class_name
-
     def _update(self, gravity: pygame.Vector2, dt: float):
         self.__update_gravity(gravity, dt)
         self.__finalize_movement(dt)
