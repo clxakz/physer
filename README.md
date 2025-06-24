@@ -3,9 +3,6 @@
 # Physer - A PyGame Collision Library
 > `Physer` is the new replacement for [stormfield](https://github.com/clxakz/stormfield)
 
------
-<br/>
-
 ## Contents
 - [Installation](#installation)
 - [Documentation](#documentation)
@@ -20,7 +17,6 @@
         - [Collider Types](#collider-types)
 
 -----
-<br/>
 
 ## Installation
 ```bash
@@ -32,7 +28,6 @@ pip install physer
 ```
 
 -----
-<br/>
 
 ## Documentation
 
@@ -45,7 +40,6 @@ Arguments
 - `gravity (Vector2)` - The gravity vector that's applied to all colliders
 
 -----
-<br/>
 
 ### `.new_collider(rect, manual_update, **kwargs)`
 The `new_collider` method creates a new collider.
@@ -58,7 +52,7 @@ Arguments
 - `**kwargs (key, value)` - Additional arguments that get passed to collider object
 
 -----
-<br/>
+
 
 ### `.new_collision_class(class_name, ignores, **kwargs)`
 The `new_collision_class` method creates a collision class with customizable settings, including which other classes to ignore during collision checks, allowing filtering and grouping of colliders.
@@ -72,7 +66,7 @@ Arguments
 - `**kwargs (key, value)` - Additional arguments that get passed to the collision class
 
 -----
-<br/>
+
 
 ### `.update(dt)`
 The `update` method is responsible for updating all colliders and resolving collisions.
@@ -83,7 +77,7 @@ Arguments
 - `dt (float)` - All colliders get updated with this delta time
 
 -----
-<br/>
+
 
 ### `.draw(screen, color, width, **kwargs)`
 The `draw` method is used mainly for debugging purposes, it draws the rects of all colliders on the screen.
@@ -97,13 +91,14 @@ Arguments
 - `**kwargs (key, value)` - Additional arguments that get passed to the draw method
 
 -----
+
 <br/>
 
 ## Collider
 The `Collider` represents a physical object in the world that attaches to your rect.
 
 -----
-<br/>
+
 
 ### `properties`
 - `rect (Rect/FRect)` - The rect that's attached to your collider
@@ -118,13 +113,13 @@ The `Collider` represents a physical object in the world that attaches to your r
 - `object (any)` - What gets returned on collision events, defaults to self (Collider)
 
 -----
-<br/>
+
 
 ### `._update(gravity, dt)`
 Manual update method.
 
 -----
-<br/>
+
 
 ### `Collider types`
 | Type      | Affected by Gravity | Affected by Velocity | Moves? | Use Case |
