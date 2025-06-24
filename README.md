@@ -36,7 +36,7 @@ pip install physer
 
 ## Documentation
 
-### World
+## World
 The `World` class manages all colliders, applies global gravity, updates their movement, handles collision detection and resolution, and triggers collision event callbacks. It serves as the central physics and collision system for your game
 ```python
 world = World(pygame.Vector2(0,0))
@@ -99,7 +99,7 @@ Arguments
 -----
 <br/>
 
-### Collider
+## Collider
 The `Collider` represents a physical object in the world that attaches to your rect.
 
 -----
